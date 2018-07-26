@@ -65,6 +65,7 @@ namespace VisitorCheckIn
                 var res = db.SaveChanges();
                 if (res > 0)
                     Response.Write("Data inserted");
+                Response.Write("Visitor's data has been successfully added with" + vi.Id);
                 db.SaveChanges();
             }
             catch (DbEntityValidationException ex)

@@ -80,7 +80,7 @@
             </asp:DropDownList>
             <asp:Label ID="Label1" runat="server" Text="ID Number"></asp:Label>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <asp:TextBox ID="txtID" runat="server" OnTextChanged="txtID_TextChanged"></asp:TextBox>
+                    <asp:TextBox ID="txtID" runat="server" OnTextChanged="txtID_TextChanged" ToolTip="Enter Only numbers"></asp:TextBox>
         </td>
         <td>
             <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ErrorMessage="This Field cannot be empty!!" ControlToValidate="ddlID" Display="Dynamic" ForeColor="Red"></asp:RequiredFieldValidator>
@@ -98,7 +98,7 @@
     <tr>
         <td class="auto-style4">Contact Number:</td>
         <td class="auto-style5">
-            <asp:TextBox ID="txtContact" runat="server"></asp:TextBox>
+            <asp:TextBox ID="txtContact" runat="server" ToolTip="Enter only 10 numbers"></asp:TextBox>
         </td>
         <td class="auto-style6">
             <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ErrorMessage="This Field cannot be empty!!" ControlToValidate="txtContact" Display="Dynamic" ForeColor="Red"></asp:RequiredFieldValidator>
@@ -122,10 +122,10 @@
     </tr>
     <tr>
         <td class="auto-style2">
-            <asp:Button ID="btnCancel" CausesValidation="false" runat="server" Text="Cancel" OnClick="btnCancel_Click" />
+            <asp:Button ID="btnCancel" CausesValidation="false" runat="server" Text="Cancel" OnClick="btnCancel_Click" ToolTip="Click To Go Back To Home Page" />
         </td>
         <td class="auto-style3">
-            <asp:Button ID="btnSave" runat="server" Text="Save" OnClick="btnSave_Click" />
+            <asp:Button ID="btnSave" runat="server" Text="Save" OnClick="btnSave_Click" ToolTip="Click to check in" />
         </td>
         <td>&nbsp;</td>
     </tr>
