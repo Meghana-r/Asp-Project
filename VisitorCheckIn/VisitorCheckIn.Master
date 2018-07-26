@@ -1,0 +1,68 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="VisitorCheckIn.master.cs" Inherits="VisitorCheckIn.VisitorCheckIn" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style7 {
+            height: 71px;
+            width: 1154px;
+        }
+        .auto-style9 {
+            width: 100%;
+            border: 3px solid #FF0066;
+            background-color: #FF6699;
+        }
+        .auto-style10 {
+            width: 216%;
+            height: 173px;
+        }
+        .auto-style11 {
+            height: 23px;
+        }
+        .auto-style13 {
+            width: 423px;
+            height: 59px;
+        }
+        .auto-style14 {
+            width: 165px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <table class="auto-style9" style="border: thin dotted #FFFFFF; background-color: #CCFFFF">
+            <tr>
+                <td class="auto-style13" style="border-width: thin; background-color: #CCCCFF">
+&nbsp;&nbsp;&nbsp;&nbsp;<table class="auto-style10" style="background-color: #CCCCFF">
+                        <tr>
+                            <td colspan="2" style="font-family: 'Bookman Old Style'; font-size: xx-large; font-variant: normal; font-style: normal; color: #FFFFFF; font-weight: bold">
+                                <asp:Image ID="Image1" runat="server" Height="168px" ImageUrl="~/Images/icons8-skyscrapers-80.png" Width="174px" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <asp:Label ID="Label1" runat="server" Font-Size="XX-Large" Text="Welcome"></asp:Label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="auto-style11" colspan="2" style="font-family: 'Bookman Old Style'; font-size: x-large; font-variant: normal; font-style: normal; color: #FFFFFF; font-weight: bold">Visitor Check In</td>
+                        </tr>
+                        <tr>
+                            <td style="font-family: 'Bookman Old Style'; font-size: x-large; font-weight: bolder; font-style: normal; color: #FFFFFF">&nbsp;</td>
+                            <td class="auto-style14">&nbsp;</td>
+                        </tr>
+                    </table>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </td>
+            </tr>
+        </table>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        <div style="border: thin groove #FFFFFF; background-color:#CCCCFF" class="auto-style7"></div>
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>
